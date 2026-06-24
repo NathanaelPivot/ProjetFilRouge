@@ -52,7 +52,8 @@ steam-game-success/
 ├── notebooks/
 │   ├── 01_exploration.ipynb   # acquisition et premier tour d'horizon
 │   ├── 02_cleaning.ipynb      # nettoyage, typage, création de features
-│   └── 03_exploration.ipynb   # EDA : distributions, genres, langues, évolution
+│   ├── 03_exploration.ipynb   # EDA : distributions, genres, langues, évolution
+│   └── 04_correlations.ipynb  # EDA : corrélations, indé vs gros studios
 ├── app/                # application Streamlit (à venir)
 ├── docs/                # documentation technique
 ├── requirements.txt
@@ -69,7 +70,8 @@ jupyter notebook notebooks/01_exploration.ipynb
 
 - [x] Acquisition et premier tour d'horizon des données
 - [x] Nettoyage et préparation
-- [ ] Analyse exploratoire
+- [x] Analyse exploratoire
+- [ ] Modélisation
 - [ ] Modélisation
 - [ ] Application interactive
 - [ ] Documentation finale

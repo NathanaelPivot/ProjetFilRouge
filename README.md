@@ -1,4 +1,4 @@
-# Steam Game Success - Data Storytelling
+# Steam Game Success — Data Storytelling
 
 Projet réalisé dans le cadre de l'UF "Spécialité IA & Data" (Ynov, Bachelor 3).
 
@@ -21,11 +21,17 @@ Le fichier n'est pas inclus dans le repo (trop volumineux). À faire :
 1. Télécharger `games.csv` depuis l'un des deux liens ci-dessus
 2. Le placer dans `data/raw/games.csv`
 
+**Point d'attention :** le fichier `games.csv` source contient un bug dans son
+en-tête (`Discount` et `DLC count` sont collés en un seul nom de colonne), ce
+qui décale toutes les colonnes suivantes si on le charge sans précaution. Les
+notebooks `01_exploration.ipynb` et `02_cleaning.ipynb` corrigent ce problème
+automatiquement au chargement.
+
 ## Installation
 
 ```bash
 # Cloner le repo
-git clone https://github.com/NathanaelPivot/ProjetFilRouge.git
+git clone <url-de-ton-repo>
 cd steam-game-success
 
 # Créer et activer un environnement virtuel
@@ -44,7 +50,9 @@ steam-game-success/
 │   ├── raw/            # données brutes (games.csv à déposer ici)
 │   └── processed/      # données nettoyées générées par le notebook
 ├── notebooks/
-│   └── 01_exploration.ipynb   # démarche : acquisition, nettoyage, EDA, modèle
+│   ├── 01_exploration.ipynb   # acquisition et premier tour d'horizon
+│   ├── 02_cleaning.ipynb      # nettoyage, typage, création de features
+│   └── 03_exploration.ipynb   # EDA : distributions, genres, langues, évolution
 ├── app/                # application Streamlit (à venir)
 ├── docs/                # documentation technique
 ├── requirements.txt
@@ -60,7 +68,7 @@ jupyter notebook notebooks/01_exploration.ipynb
 ## Statut
 
 - [x] Acquisition et premier tour d'horizon des données
-- [ ] Nettoyage et préparation
+- [x] Nettoyage et préparation
 - [ ] Analyse exploratoire
 - [ ] Modélisation
 - [ ] Application interactive

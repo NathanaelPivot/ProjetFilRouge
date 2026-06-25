@@ -53,7 +53,8 @@ steam-game-success/
 │   ├── 01_exploration.ipynb   # acquisition et premier tour d'horizon
 │   ├── 02_cleaning.ipynb      # nettoyage, typage, création de features
 │   ├── 03_exploration.ipynb   # EDA : distributions, genres, langues, évolution
-│   └── 04_correlations.ipynb  # EDA : corrélations, indé vs gros studios
+│   ├── 04_correlations.ipynb  # EDA : corrélations, indé vs gros studios
+│   └── 05_modeling.ipynb      # cible, features, régression logistique vs Random Forest
 ├── app/                # application Streamlit (à venir)
 ├── docs/                # documentation technique
 ├── requirements.txt
